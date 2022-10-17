@@ -9,6 +9,7 @@ return [
     'bold' => 'Bold',
     'code_block' => 'Code Block',
     'code' => 'Inline Code',
+    'katex' => 'Formula',
     'color' => 'Color',
     'details' => 'Details',
     'erase' => 'Erase All Content',

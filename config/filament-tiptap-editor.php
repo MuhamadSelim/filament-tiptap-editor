@@ -52,6 +52,7 @@ return [
             'grid',
             'media',
             'code',
+            'katex',
             'codeblock',
             'source',
             'youtube',

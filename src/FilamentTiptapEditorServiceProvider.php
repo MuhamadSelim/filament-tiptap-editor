@@ -38,7 +38,7 @@ class FilamentTiptapEditorServiceProvider extends PluginServiceProvider
         if ($theme = $this->getTiptapEditorStylesLink()) {
             Filament::registerRenderHook(
                 'styles.end',
-                fn (): string => $theme,
+                fn(): string => $theme,
             );
         }
 
@@ -47,6 +47,7 @@ class FilamentTiptapEditorServiceProvider extends PluginServiceProvider
         Livewire::component('filament-tiptap-editor-source-modal', Components\SourceModal::class);
         Livewire::component('filament-tiptap-editor-youtube-modal', Components\YoutubeModal::class);
         Livewire::component('filament-tiptap-editor-vimeo-modal', Components\VimeoModal::class);
+        Livewire::component('filament-tiptap-editor-katex-modal', Components\KatexModal::class);
     }
 
     public function getTiptapEditorStylesLink(): ?Htmlable
